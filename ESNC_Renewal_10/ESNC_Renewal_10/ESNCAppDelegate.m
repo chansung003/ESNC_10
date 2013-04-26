@@ -15,6 +15,17 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    UIStoryboard *storyboard = nil;
+    
+    if( [UIScreen mainScreen].bounds.size.height == 568 ) {
+        storyboard = [UIStoryboard storyboardWithName:@"iPhone5Storyboard" bundle:[NSBundle mainBundle]];
+    } else {
+        storyboard = [UIStoryboard storyboardWithName:@"iPhone4Storyboard" bundle:[NSBundle mainBundle]];
+    }
+    
+    self.window.rootViewController = (UIViewController *)[storyboard instantiateInitialViewController];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
