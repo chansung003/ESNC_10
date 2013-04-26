@@ -16,6 +16,8 @@
 		33CCE329172AB37C00501F40 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 33CCE328172AB37C00501F40 /* Default.png */; };
 		33CCE32B172AB37C00501F40 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33CCE32A172AB37C00501F40 /* Default@2x.png */; };
 		33CCE32D172AB37C00501F40 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33CCE32C172AB37C00501F40 /* Default-568h@2x.png */; };
+		33CCE334172AB42B00501F40 /* iPhone4Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33CCE333172AB42B00501F40 /* iPhone4Storyboard.storyboard */; };
+		33CCE337172AB44D00501F40 /* iPhone5Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33CCE336172AB44D00501F40 /* iPhone5Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		33CCE328172AB37C00501F40 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		33CCE32A172AB37C00501F40 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		33CCE32C172AB37C00501F40 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		33CCE333172AB42B00501F40 /* iPhone4Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = iPhone4Storyboard.storyboard; path = Storyboards/iPhone4Storyboard.storyboard; sourceTree = "<group>"; };
+		33CCE336172AB44D00501F40 /* iPhone5Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = iPhone5Storyboard.storyboard; path = Storyboards/iPhone5Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 		33CCE31C172AB37C00501F40 /* ESNC_Renewal_10 */ = {
 			isa = PBXGroup;
 			children = (
+				33CCE335172AB43500501F40 /* Storyboards */,
 				33CCE325172AB37C00501F40 /* ESNCAppDelegate.h */,
 				33CCE326172AB37C00501F40 /* ESNCAppDelegate.m */,
 				33CCE31D172AB37C00501F40 /* Supporting Files */,
@@ -97,6 +102,15 @@
 				33CCE32C172AB37C00501F40 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		33CCE335172AB43500501F40 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				33CCE333172AB42B00501F40 /* iPhone4Storyboard.storyboard */,
+				33CCE336172AB44D00501F40 /* iPhone5Storyboard.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +169,8 @@
 				33CCE329172AB37C00501F40 /* Default.png in Resources */,
 				33CCE32B172AB37C00501F40 /* Default@2x.png in Resources */,
 				33CCE32D172AB37C00501F40 /* Default-568h@2x.png in Resources */,
+				33CCE334172AB42B00501F40 /* iPhone4Storyboard.storyboard in Resources */,
+				33CCE337172AB44D00501F40 /* iPhone5Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
