@@ -1,81 +1,101 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="v7D-rR-VB4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Ny4-4h-aZU">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="Mds-Ml-aHT">
+        <!--Main Screen View Controller - ESNC-->
+        <scene sceneID="xJo-w1-OBd">
             <objects>
-                <viewController id="VIA-Zr-4R3" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="TPg-1J-IJg">
+                <viewController storyboardIdentifier="" id="e33-lu-71J" customClass="ESNCMainScreenViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4iF-W1-EMW">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QRl-Ad-uqJ">
-                                <items/>
-                            </toolbar>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85C-2b-HST">
-                                <attributedString key="attributedText">
-                                    <fragment content="Reserved for Ad">
-                                        <attributes>
-                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <font key="NSFont" size="17" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Center View Controller" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7MA-5T-gAc">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="feq-J5-XP5">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="85C-2b-HST" firstAttribute="trailing" secondItem="TPg-1J-IJg" secondAttribute="trailing" type="default" id="0hY-g6-q06"/>
-                            <constraint firstItem="QRl-Ad-uqJ" firstAttribute="leading" secondItem="TPg-1J-IJg" secondAttribute="leading" type="default" id="1Eo-PO-dXo"/>
-                            <constraint firstItem="QRl-Ad-uqJ" firstAttribute="bottom" secondItem="TPg-1J-IJg" secondAttribute="bottom" type="default" id="HB8-fy-nIq"/>
-                            <constraint firstAttribute="trailing" secondItem="feq-J5-XP5" secondAttribute="trailing" constant="86" id="MTw-dn-0HG"/>
-                            <constraint firstItem="feq-J5-XP5" firstAttribute="top" secondItem="TPg-1J-IJg" secondAttribute="top" constant="193" id="SaU-Yv-n8C"/>
-                            <constraint firstAttribute="bottom" secondItem="85C-2b-HST" secondAttribute="bottom" constant="12" id="T4U-16-JN7"/>
-                            <constraint firstItem="QRl-Ad-uqJ" firstAttribute="trailing" secondItem="TPg-1J-IJg" secondAttribute="trailing" type="default" id="XP7-ZL-bhb"/>
-                            <constraint firstItem="85C-2b-HST" firstAttribute="leading" secondItem="TPg-1J-IJg" secondAttribute="leading" type="default" id="zjS-Qp-WeO"/>
+                            <constraint firstItem="7MA-5T-gAc" firstAttribute="leading" secondItem="4iF-W1-EMW" secondAttribute="leading" constant="70" id="bSX-hC-XCd"/>
+                            <constraint firstItem="7MA-5T-gAc" firstAttribute="top" secondItem="4iF-W1-EMW" secondAttribute="top" constant="201" id="fRo-Zr-hUy"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="h78-Bf-Qbh"/>
+                    <navigationItem key="navigationItem" title="ESNC" id="eJe-Z3-iGX">
+                        <barButtonItem key="leftBarButtonItem" id="wbE-av-pXK">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="0jT-3m-Lco">
+                                <rect key="frame" x="5" y="5" width="33" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" image="navbar-button.png"/>
+                                <connections>
+                                    <action selector="menuButtonClicked:" destination="e33-lu-71J" eventType="touchUpInside" id="YW4-gx-jhq"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ABc-u9-W7I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qzv-mP-5lk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-285" y="-47"/>
+            <point key="canvasLocation" x="-1116" y="-152"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bxu-gw-wqM">
+            <objects>
+                <viewController storyboardIdentifier="sideNavigationViewController" id="0DT-vE-XC3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xuO-Km-dTv">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Side Navigation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGu-mG-UQ2">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xGu-mG-UQ2" firstAttribute="centerX" secondItem="xuO-Km-dTv" secondAttribute="centerX" type="default" id="0wV-Nf-bEu"/>
+                            <constraint firstItem="xGu-mG-UQ2" firstAttribute="top" secondItem="xuO-Km-dTv" secondAttribute="top" constant="256" id="Epr-Yy-vXK"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sL5-Yb-0Dg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1116" y="-819"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="ZvB-QD-ehF">
+        <scene sceneID="fR7-R8-Jfv">
             <objects>
-                <navigationController id="v7D-rR-VB4" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="nav" id="Ny4-4h-aZU" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xv7-hT-w0B">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PJl-3L-hzP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="VIA-Zr-4R3" kind="relationship" relationship="rootViewController" id="stk-EC-W0a"/>
+                        <segue destination="e33-lu-71J" kind="relationship" relationship="rootViewController" id="60i-zD-fM5"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CQB-fI-wyF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="20y-ml-Kjd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-811" y="-47"/>
+            <point key="canvasLocation" x="-1509" y="-152"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="navbar-button.png" width="29" height="29"/>
+    </resources>
     <classes>
+        <class className="ESNCMainScreenViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ESNCMainScreenViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="menuButtonClicked:" candidateClass="UIButton"/>
+            </relationships>
+        </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>

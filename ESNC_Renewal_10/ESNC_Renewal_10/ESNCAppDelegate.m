@@ -17,6 +17,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     UIStoryboard *storyboard = nil;
+    self.viewController = [[JASidePanelController alloc] init];
     
     if( [UIScreen mainScreen].bounds.size.height == 568 ) {
         storyboard = [UIStoryboard storyboardWithName:@"iPhone5Storyboard" bundle:[NSBundle mainBundle]];
@@ -24,7 +25,10 @@
         storyboard = [UIStoryboard storyboardWithName:@"iPhone4Storyboard" bundle:[NSBundle mainBundle]];
     }
     
-    self.window.rootViewController = (UIViewController *)[storyboard instantiateInitialViewController];
+    self.viewController.centerPanel = [storyboard instantiateInitialViewController];
+    self.viewController.leftPanel = [storyboard instantiateViewControllerWithIdentifier:@"sideNavigationViewController"];
+    
+    self.window.rootViewController = self.viewController;
     
     [self.window makeKeyAndVisible];
     return YES;
