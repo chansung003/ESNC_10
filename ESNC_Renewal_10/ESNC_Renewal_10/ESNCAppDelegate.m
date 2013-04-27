@@ -19,13 +19,15 @@
     UIStoryboard *storyboard = nil;
     self.viewController = [[JASidePanelController alloc] init];
     
+    //choose storyboard by device's resolution (3.5"(iPhone3GS ~ iPhone4S) or 4"(iPhone5) )
     if( [UIScreen mainScreen].bounds.size.height == 568 ) {
         storyboard = [UIStoryboard storyboardWithName:@"iPhone5Storyboard" bundle:[NSBundle mainBundle]];
     } else {
         storyboard = [UIStoryboard storyboardWithName:@"iPhone4Storyboard" bundle:[NSBundle mainBundle]];
     }
     
-    self.viewController.centerPanel = [storyboard instantiateInitialViewController];
+    //set center/left view controller for side navigation controller
+    self.viewController.centerPanel = [storyboard instantiateInitialViewController];    // which is navigation controller
     self.viewController.leftPanel = [storyboard instantiateViewControllerWithIdentifier:@"sideNavigationViewController"];
     
     self.window.rootViewController = self.viewController;
